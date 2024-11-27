@@ -13,13 +13,13 @@
       color: #212529;
     }
     header {
-      background: gray;
+      background: #004c99; /* Primary color */
       color: white;
       padding: 1rem 0;
       text-align: center;
     }
     header img {
-      width: 150px;
+      width: 200px;
       margin-bottom: 1rem;
     }
     header h1 {
@@ -28,18 +28,7 @@
     }
     header p {
       font-size: 1.2rem;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      color: #ffcc00; /* Accent color from the site */
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
+      margin: 0.5rem 0;
     }
     section {
       padding: 2rem;
@@ -56,11 +45,24 @@
       padding: 0;
     }
     ul li {
-      margin: 1.5rem 0;
-      line-height: 1.5;
+      margin: 1rem 0;
+      line-height: 1.6;
     }
     ul li strong {
       color: #004c99;
+    }
+    nav {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    nav a {
+      color: #ffcc00; /* Accent color */
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     footer {
       background: #004c99;
@@ -77,77 +79,78 @@
 </head>
 <body>
   <header>
-    <img src="https://cloudmrhub.com/img/cloudMRIcon.png" alt="CloudMRHub Logo">
+    <img src="https://cloudmrhub.com/assets/logo.png" alt="CloudMRHub Logo">
     <h1>Welcome to CloudMRHub</h1>
-    <p>Your gateway to streamlined medical imaging and radiomics workflows.</p>
+    <p>A comprehensive hub for medical imaging and radiomics workflows.</p>
     <nav>
-      <a href="#projects">Projects</a>
-      <a href="#tools">Core Tools</a>
+      <a href="#overview">Overview</a>
+      <a href="#applications">Applications</a>
+      <a href="#tools">Tools</a>
       <a href="https://github.com/cloudmrhub" target="_blank">GitHub</a>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About CloudMRHub</h2>
+  <section id="overview">
+    <h2>Overview</h2>
     <p>
-      CloudMRHub is a comprehensive ecosystem of applications and tools designed to revolutionize workflows in medical imaging and radiomics.
-      Our solutions leverage cutting-edge technologies, including Kubernetes, serverless architectures, and scalable computational pipelines, to provide robust tools for MRI analysis and beyond.
+      CloudMRHub provides an integrated platform for developing applications, computational pipelines, and web solutions for medical imaging and radiomics. 
+      Our ecosystem supports both Kubernetes-based implementations and serverless architectures, ensuring scalability and maintainability.
     </p>
   </section>
 
-  <section id="projects">
-    <h2>Our Projects</h2>
+  <section id="applications">
+    <h2>Applications</h2>
     <ul>
       <li>
-        <strong>MR Optimum</strong>: 
-        A web application for standardized Signal-to-Noise Ratio (SNR) calculations. 
+        <strong>MR Optimum</strong>: A web application for Signal-to-Noise Ratio (SNR) calculations. Supports raw MR data compatible with ISMRMRD format.
         <ul>
-          <li><a href="https://github.com/cloudmrhub/mr-optimum-frontend" target="_blank">Frontend</a></li>
-          <li><a href="https://github.com/cloudmrhub/mr-optimum-app" target="_blank">Backend</a></li>
+          <li><strong>Python Package:</strong> <a href="https://github.com/cloudmrhub/mroptimum" target="_blank">mroptimum</a></li>
+          <li><strong>Frontend:</strong> <a href="https://github.com/cloudmrhub/mr-optimum-frontend" target="_blank">React Application</a></li>
+          <li><strong>Backend:</strong> <a href="https://github.com/cloudmrhub/mr-optimum-app" target="_blank">Serverless Implementation</a></li>
         </ul>
       </li>
       <li>
-        <strong>CAMRIE</strong>: 
-        A virtual MRI experiment platform powered by Bloch simulations. 
+        <strong>CAMRIE</strong>: Simulates virtual MRI experiments using Bloch simulation.
         <ul>
-          <li><a href="https://github.com/cloudmrhub/camrie-frontend" target="_blank">Frontend</a></li>
-          <li><a href="https://github.com/cloudmrhub/lambdakoma" target="_blank">LambdaKoma</a> - Cloud-based simulation engine</li>
+          <li><strong>Frontend:</strong> <a href="https://github.com/cloudmrhub/camrie-frontend" target="_blank">React Application</a></li>
+          <li><strong>LambdaKoma:</strong> Cloud-based Bloch simulator for v2.</li>
         </ul>
       </li>
       <li>
-        <strong>RADO</strong>: 
-        A tool for advanced radiomics feature extraction.
+        <strong>RADO</strong>: Radiomics tool for feature extraction.
         <ul>
-          <li><a href="https://github.com/cloudmrhub/rado-app" target="_blank">Backend</a></li>
-          <li><a href="https://github.com/cloudmrhub/pyfe" target="_blank">PyFE</a> - Radiomics feature extraction tool</li>
+          <li><strong>Features Extractor:</strong> ITK-based library developed during BD2Decide.</li>
+          <li><strong>Backend:</strong> <a href="https://github.com/cloudmrhub/rado-app" target="_blank">Serverless Implementation</a></li>
         </ul>
       </li>
       <li>
-        <strong>TESS</strong>: 
-        A versatile application for MRI-based temperature calculations.
+        <strong>TESS</strong>: Tool for temperature analysis in MRI workflows.
         <ul>
-          <li><a href="https://github.com/cloudmrhub/tess" target="_blank">Python Package</a></li>
-          <li><a href="https://github.com/cloudmrhub/tess-frontend" target="_blank">Frontend</a></li>
+          <li><strong>Python Package:</strong> <a href="https://github.com/cloudmrhub/tess" target="_blank">tess</a></li>
+          <li><strong>Frontend:</strong> <a href="https://github.com/cloudmrhub/tess-frontend" target="_blank">React Application</a></li>
         </ul>
       </li>
       <li>
-        <strong>Poirot</strong>: 
-        A performance analysis tool for MRI workflows.
+        <strong>Poirot</strong>: Performance analysis tool.
         <ul>
-          <li><a href="https://github.com/cloudmrhub/poirot-frontend" target="_blank">Frontend</a></li>
-          <li><a href="https://github.com/cloudmrhub/PerformanceMaster" target="_blank">PerformanceMaster</a> - Supporting Python package</li>
+          <li><strong>Frontend:</strong> <a href="https://github.com/cloudmrhub/poirot-frontend" target="_blank">React Application</a></li>
+          <li><strong>Python Package:</strong> PerformanceMaster for backend operations.</li>
         </ul>
       </li>
     </ul>
   </section>
 
   <section id="tools">
-    <h2>Core Tools</h2>
+    <h2>Shared Tools</h2>
     <ul>
-      <li><strong>cloudmrhub</strong>: A Python library providing shared MRI computational functionalities.</li>
-      <li><strong>cmrawspy</strong>: A Python package for managing CloudMR data and operations.</li>
-      <li><strong>cloudmr-ux</strong>: A design library for consistent UI components across CloudMR applications.</li>
-      <li><strong>ComputingEngine</strong>: The backbone of CloudMR's V1 applications.</li>
+      <li><strong>cloudmrhub</strong>: Python library for MRI computations and reconstructions.</li>
+      <li><strong>cmrawspy</strong>: Python package for handling CloudMR data.</li>
+      <li><strong>cloudmr-ux</strong>: UI library for frontend components.</li>
+      <li><strong>ComputingEngine</strong>: Foundational backend for Cloud MR applications.</li>
+      <li><strong>Raider</strong>: Python library for handling Siemens DAT files.</li>
+      <li><strong>pynico</strong>: Utility for string and file management.</li>
+      <li><strong>registrationMplus</strong>: Advanced image registration algorithms.</li>
+      <li><strong>pydaug</strong>: Data augmentation library for medical imaging.</li>
     </ul>
   </section>
 
