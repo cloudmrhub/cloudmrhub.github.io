@@ -3,11 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to My Organization</title>
+  <title>CloudMRHub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #007acc;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      margin: 1rem auto;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    section h2 {
+      color: #007acc;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 0.5rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 1rem 0;
+    }
+    footer {
+      background: #333;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Organization</h1>
-  <p>Explore our projects and repositories.</p>
-  <a href="https://github.com/cloudmrhub" target="_blank">Visit Our GitHub</a>
+  <header>
+    <h1>Welcome to CloudMRHub</h1>
+    <p>Streamlining workflows in medical imaging and radiomics.</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#tools">Core Tools</a>
+      <a href="https://github.com/cloudmrhub" target="_blank">GitHub</a>
+    </nav>
+  </header>
+
+  <section id="projects">
+    <h2>Our Projects</h2>
+    <ul>
+      <li><strong>MR Optimum</strong>: Web application for Signal-to-Noise Ratio (SNR) calculations. 
+        <a href="https://github.com/cloudmrhub/mr-optimum-frontend" target="_blank">Frontend</a> | 
+        <a href="https://github.com/cloudmrhub/mr-optimum-app" target="_blank">Backend</a>
+      </li>
+      <li><strong>CAMRIE</strong>: Virtual MRI experiments with Bloch simulation. 
+        <a href="https://github.com/cloudmrhub/camrie-frontend" target="_blank">Frontend</a>
+      </li>
+      <li><strong>RADO</strong>: Radiomics feature extraction tools. 
+        <a href="https://github.com/cloudmrhub/rado-app" target="_blank">Backend</a>
+      </li>
+      <li><strong>TESS</strong>: Temperature calculations for MRI.
+        <a href="https://github.com/cloudmrhub/tess" target="_blank">Python Package</a> |
+        <a href="https://github.com/cloudmrhub/tess-frontend" target="_blank">Frontend</a>
+      </li>
+      <li><strong>Poirot</strong>: Performance analysis tools for MRI. 
+        <a href="https://github.com/cloudmrhub/poirot-frontend" target="_blank">Frontend</a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="tools">
+    <h2>Core Tools</h2>
+    <ul>
+      <li><strong>cloudmrhub</strong>: Core Python library for MRI computations and reconstructions.</li>
+      <li><strong>cmrawspy</strong>: Python package for handling CloudMR data operations.</li>
+      <li><strong>cloudmr-ux</strong>: Standardized styling components for frontends.</li>
+      <li><strong>ComputingEngine</strong>: Foundational system for CloudMR's V1 applications.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2024 CloudMRHub | <a href="https://github.com/cloudmrhub" target="_blank" style="color: white;">Visit GitHub</a></p>
+  </footer>
 </body>
 </html>
