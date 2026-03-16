@@ -1,4 +1,4 @@
-<img width="1415" height="347" alt="Screenshot 2026-03-16 at 15 01 39" src="https://github.com/user-attachments/assets/aa5f5283-4a37-4f6c-b125-7dc7407d40cf" />
+<img width="1415"  alt="Screenshot 2026-03-16 at 15 01 39" src="https://github.com/user-attachments/assets/aa5f5283-4a37-4f6c-b125-7dc7407d40cf" />
 
 # Cloud MR
 
